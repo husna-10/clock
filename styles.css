@@ -6,8 +6,8 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #282c34;
-    color: #61dafb;
     font-family: 'Arial', sans-serif;
+    color: #61dafb;
   }
   
   .clock-container {
@@ -32,7 +32,7 @@ body {
     position: absolute;
     width: 50%;
     height: 2px;
-    background-color: #61dafb;
+    background: #61dafb;
     top: 50%;
     left: 50%;
     transform-origin: 100%;
@@ -41,19 +41,30 @@ body {
   }
   
   .hour {
-    height: 4px;
-    width: 40%;
+    position: absolute;
+    width: 6px;
+    height: 50px;
     background-color: #fff;
+    transform-origin: 50% 100%;
+    top: 50px;
   }
   
   .minute {
-    height: 3px;
-    width: 45%;
+    position: absolute;
+    width: 4px;
+    height: 70px;
+    background-color: #61dafb;
+    transform-origin: 50% 100%;
+    top: 30px;
   }
   
   .second {
-    height: 2px;
+    position: absolute;
+    width: 2px;
+    height: 90px;
     background-color: #ff5555;
+    transform-origin: 50% 100%;
+    top: 10px;
   }
   
   .center-dot {
